@@ -1,6 +1,6 @@
 ## In this repo, we create a Jenkins master and a Jenkins agent using terraform and we increase the agent size to 50GB as it has to run multiple jobs at a time.
 
-
+## Do aws configure, before starting terraform commands
 #### Understanding the each file
 
     jenkins-agent.sh will have all the details like 
