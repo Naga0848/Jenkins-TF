@@ -68,7 +68,7 @@ resource "aws_security_group" "main" {
 }
 
 resource "aws_route53_record" "jenkins" {
-  zone_id = var.zone_id
+  zone_id = Z07792322A7JHE99VBAND
   name    = "jenkins.${var.zone_name}"
   type    = "A"
   ttl     = 1
@@ -77,7 +77,7 @@ resource "aws_route53_record" "jenkins" {
 }
 
 resource "aws_route53_record" "jenkins-agent" {
-  zone_id = var.zone_id
+  zone_id = Z07792322A7JHE99VBAND
   name    = "jenkins-agent.${var.zone_name}"
   type    = "A"
   ttl     = 1
