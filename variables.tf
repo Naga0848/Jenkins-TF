@@ -8,7 +8,7 @@ variable "environment" {
 
 variable "zone_name" {
   type        = string
-  default     = "daws84s.site"
+  default     = "njanapati.site"
   description = "description"
 }
 
