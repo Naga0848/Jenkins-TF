@@ -1,6 +1,9 @@
 ## In this repo, we create a Jenkins master and a Jenkins agent using terraform and we increase the agent size to 50GB as it has to run multiple jobs at a time.
 
 ## Do aws configure, before starting terraform commands
+
+## We should allow the traffic from jenkins-agent to EKS-Master
+    take the sg from EKS >> Networking >> SG and paste it in the SG >> Inbound rules of the EC2 where our Jenkins-Agent is running i.e., HTTPS and pasthe the SG
 #### Understanding the each file
 
     jenkins-agent.sh will have all the details like 
