@@ -25,6 +25,6 @@
 
         # And we should create aws_route53_record for both jenkins(publicIP) and jenkins_agent(privateIP)
 
-        # ++++++++++++++++++++++
+        # 
 
     
