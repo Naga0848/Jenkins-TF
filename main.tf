@@ -1,7 +1,7 @@
 
 resource "aws_instance" "jenkins" {
   ami           = local.ami_id
-  instance_type = "t2.micro"
+  instance_type = "t3.small"
   vpc_security_group_ids = [aws_security_group.main.id]
   subnet_id = "subnet-034c5f68fd6c4897b" #my subent id from vpc console
 
@@ -21,7 +21,7 @@ resource "aws_instance" "jenkins" {
 
 resource "aws_instance" "jenkins_agent" {
   ami           = local.ami_id
-  instance_type = "t2.micro"
+  instance_type = "t3.small"
   vpc_security_group_ids = [aws_security_group.main.id]
   subnet_id = "subnet-034c5f68fd6c4897b" #my subent id from vpc console
 
