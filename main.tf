@@ -1,3 +1,4 @@
+
 resource "aws_instance" "jenkins" {
   ami           = local.ami_id
   instance_type = "t3.small"
