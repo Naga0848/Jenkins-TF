@@ -1,5 +1,5 @@
 
-data "aws_ami" "RHEL-9-DevOps-Practice" {
+data "aws_ami" "joindevops" {
 
     most_recent = true
     owners = ["973714476881"]

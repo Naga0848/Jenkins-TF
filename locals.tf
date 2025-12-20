@@ -1,5 +1,5 @@
 locals{
-    ami_id = data.aws_ami.RHEL-9-DevOps-Practice.id
+    ami_id = data.aws_ami.joindevops.id
     common_tags = {
         Project = var.project
         Environment = var.environment
